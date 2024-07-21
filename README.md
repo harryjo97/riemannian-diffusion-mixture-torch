@@ -2,7 +2,7 @@
 
 This repo contains a PyTorch implementation for the paper [Generative Modeling on Manifolds Through Mixture of Riemannian Diffusion Processes](https://arxiv.org/abs/2310.07216). 
 
-We provide official code repo for JAX implementation in [riemannian-diffusion-mixture-torch](https://github.com/harryjo97/riemannian-diffusion-mixture-torch).
+We provide official code repo for JAX implementation in [riemannian-diffusion-mixture](https://github.com/harryjo97/riemannian-diffusion-mixture).
 
 ## Why Riemannian Diffusion Mixture?
 

@@ -1,0 +1,6 @@
+
+in_dim    : ${eval:${modelf.out_dim} + 1}
+hid_dim   : 512
+out_dim   : ${modelf.out_dim}
+num_layers: 6
+act       : swish

@@ -1,0 +1,7 @@
+_target_: distribution.WrappedMixture
+_convert_: partial
+
+scale     : 0.2
+batch_dims: ${batch_size}
+manifold  : ${manifold}
+mean_type : so3

@@ -1,0 +1,4 @@
+_target_: models.networks.ScoreNetwork
+
+defaults:
+  - default

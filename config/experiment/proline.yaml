@@ -1,0 +1,22 @@
+# @package _global_
+
+name      : proline
+experiment: proline
+torus_dim : 2
+batch_size: 4096
+steps     : 500000
+
+defaults:
+  - protein
+  - /dataset: proline
+
+beta_schedule:
+  beta_0: 0.01
+  beta_f: 0.01
+
+model:
+  num_layers: 6
+  hidden_dim: 512
+
+optim:
+  lr: 4e-4

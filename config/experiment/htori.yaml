@@ -1,0 +1,49 @@
+# @package _global_
+
+name: htori
+
+defaults:
+  - /dataset : htori
+  - /manifold: htori
+  - /mix     : log
+  - /modelf  : mlp
+  - /modelb  : mlp
+
+n: 1
+
+modelf:
+  hid_dim      : 2048
+  out_dim      : ${eval:${n} * 2}
+  act          : swish
+  num_layers   : 2
+
+modelb:
+  hid_dim      : 512
+  out_dim      : ${eval:${n} * 2}
+  act          : swish
+  num_layers   : 1
+
+likelihood:
+  exact        : False
+
+beta_schedule:
+  beta_0: 0.01
+  beta_f: 0.02
+
+optim:
+  lr: 4e-4
+
+splits      : [0.8, 0.1, 0.1]
+batch_size  : 512
+steps       : 50000
+ema_rate    : 0.999
+eps         : 1.0e-3
+use_pode    : True
+
+val_freq    : 50000
+plot_freq   : 50000
+
+lr_sched    : False
+
+test_test   : False 
+train_plot  : False

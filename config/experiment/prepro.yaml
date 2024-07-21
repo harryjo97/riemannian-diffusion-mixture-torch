@@ -1,0 +1,22 @@
+# @package _global_
+
+name      : prepro
+experiment: prepro
+torus_dim : 2
+batch_size: 4096
+steps     : 200000
+
+defaults:
+  - protein
+  - /dataset: prepro
+
+beta_schedule:
+  beta_0: 0.01
+  beta_f: 0.01
+
+model:
+  num_layers: 5
+  hidden_dim: 512
+
+optim:
+  lr: 4e-4

@@ -1,0 +1,25 @@
+# @package _global_
+
+name: so3
+experiment: so3
+
+defaults:
+  - /dataset : so3
+  - /manifold: so3
+  - /mix     : log
+  - /model   : tangent
+
+model:
+  out_dim: 9
+
+batch_size  : 512
+splits      : [0.8, 0.1, 0.1]
+steps       : 50000
+ema_rate    : 0.999
+eps         : 1.0e-3
+use_pode    : True
+
+val_freq    : 10000
+plot_freq   : 10000
+
+best_val : False

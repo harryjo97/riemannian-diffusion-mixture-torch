@@ -1,0 +1,26 @@
+defaults:
+  - /mix     : log
+  - /modelf  : mlp
+  - /modelb  : mlp
+
+modelf:
+  out_dim      : ${eval:${torus_dim} * 2}
+  act          : swish
+
+modelb:
+  out_dim      : ${eval:${torus_dim} * 2}
+  act          : swish
+
+splits      : [0.8, 0.1, 0.1]
+# steps       : 1000000
+ema_rate    : 0.999
+eps         : 1.0e-3
+use_pode    : True
+
+val_freq    : 1000
+plot_freq   : 10000
+
+lr_sched    : False
+
+best_val : True
+patience : 20000

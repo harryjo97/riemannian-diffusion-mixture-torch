@@ -1,0 +1,22 @@
+# @package _global_
+
+name      : rna
+experiment: rna
+torus_dim : 7
+batch_size: 8192 
+steps     : 200000
+
+defaults:
+  - protein
+  - /dataset: rna
+
+beta_schedule:
+  beta_0: 1e-4
+  beta_f: 5e-4
+
+model:
+  num_layers: 5
+  hidden_dim: 512
+
+optim:
+  lr: 2e-3

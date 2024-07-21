@@ -1,0 +1,4 @@
+_target_: data.protein.Top500
+_convert_: partial
+data_dir: ${data_dir}/top500
+amino: Glycine
